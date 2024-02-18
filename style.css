@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    border: 0;
+    line-height: 1.5;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+
+    background-color: #0284c7;
+
+    padding: 10px 50px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+}
+
+header > button {
+    cursor: pointer;
+}
+
+.dropdown ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    margin-left: -165px;
+    margin-top: 20px;
+
+
+    list-style-type: none;
+}
+
+.dropdown li {
+    padding: 10px 60px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    width: 80vw;
+    max-width: 800px;
+}
+
+.img-container {
+    width: 400%;
+    
+    display: flex;
+    align-self: center;
+    gap: 40%;
+
+    transition: transform 0.5s ease; 
+    transform: translateX(40%);
+}
+
+.carousel-frame {
+    background-color: antiquewhite;
+
+    width: 100%;
+    height: 350px;
+
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.control-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+    width: 100%;
+
+    position: absolute;
+
+    z-index: 1;
+
+}
+
+.next,
+.previous {
+    background-color: rgba(128, 128, 128, 0.15);
+
+    font-size: 1.5em;
+
+    cursor: pointer;
+}
+
+.slide {
+    width: 200px;
+}
+
+.circle-nav {
+    align-self: center;
+    margin-top: -30px;
+
+    z-index: 1;
+
+    display: flex;
+    gap: 15px;
+
+    
+}
+
+.circle-nav button {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 100px;
+
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.circle-nav button.selected {
+    background-color: rgba(100, 100, 100, 0.5);
+    cursor: default;
+}
+
